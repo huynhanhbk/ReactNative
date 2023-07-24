@@ -11,6 +11,9 @@ export default class App extends React.Component {
         { id: 1, name: "Ca1" },
         { id: 2, name: "Ca2" },
         { id: 3, name: "Ca3" },
+        { id: 4, name: "Ca4" },
+        { id: 5, name: "Ca5" },
+        { id: 6, name: "Ca6" },
       ],
     };
   }
@@ -26,6 +29,7 @@ export default class App extends React.Component {
           data={categories}
           renderItem={({item}) => <CategoryListitem category={item}/>}
           keyExtractor={item => '${item.id}'}
+          contentContainerStyle={{paddingLeft: 16, paddingRight: 16 }}
           />
         {/* </ScrollView> */}
       </View>
