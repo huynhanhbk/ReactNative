@@ -3,8 +3,9 @@ import {Image, Text, View, StyleSheet} from "react-native";
 import CameraImage from '../assets/camera.png';
 
 export default function CategoryListitem(props){
+    const {category} = props;
     return <View style={styles.container}>
-        <Text style={styles.title}>Category</Text>
+        <Text style={styles.title}>{category.name}</Text>
         <Image style={styles.categoryImage} source={CameraImage}/>
     </View>
 }
